@@ -1,0 +1,50 @@
+{
+    "name": "u-labs/thing",
+    "description": "The thing is simple and lightweight CMF for web-development, built on top of Yii and provide powerfull components for simplify development.",
+    "keywords": ["thing", "yii", "web", "project", "app", "cms", "cmf"],
+    "homepage": "http://kulikov.im",
+    "type": "cmf",
+    "license": "AGPLv3",
+    "authors": [
+        {
+            "name": "Evgeniy Kulikov",
+            "email": "tuxuls@gmail.com",
+            "homepage": "http://kulikov.im",
+            "role": "Team Lead/Developer"
+        }
+
+    ],
+    "support": {
+        "email": "thing@kulikov.im",
+        "issues": "https://github.com/u-labs/thing/issues",
+        "forum": "http://thing.kulikov.im/",
+        "wiki": "http://thing.kulikov.im/",
+        "source": "https://github.com/u-labs/thing/"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "dev-master",
+        "yiisoft/yii2-swiftmailer": "dev-master",
+        "yiisoft/yii2-bootstrap": "dev-master",
+        "yiisoft/yii2-debug": "dev-master",
+        "yiisoft/yii2-gii": "dev-master"
+    },
+    "require-dev": {
+        "codeception/codeception": "1.6.*"
+    },
+    "scripts": {
+            "post-create-project-cmd": [
+                    "yii\\composer\\Installer::setPermission"
+            ]
+    },
+    "extra": {
+            "writable": [
+                    "runtime",
+                    "web/assets"
+            ],
+            "executable": [
+                    "yii"
+            ]
+    }
+}
