@@ -38,6 +38,9 @@
                     "yii\\composer\\Installer::setPermission"
             ]
     },
+    "autoload": {
+        "psr-0": { "thing\\": "" }
+    },
     "extra": {
             "writable": [
                     "runtime",
